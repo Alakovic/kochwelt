@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezept des Tages</title>
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="kontakt.html">
+    <link rel="stylesheet" href="impressum.html">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/img/logo_small.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body id="recipe2">
+    <header>
+      <div class="header-content"> 
+          <div class="logo_logo">
+              <a href="index.html">
+                 <img class="head_logo" src="./assets/img/logo.png" alt="Logo" />
+              </a>
+            </div>
+      <div class="head_links">
+          <a class="on_hover" href="index.html">Start</a> 
+          <a class="on_hover" href="rezept_des_tages.html">Rezept des Tages</a>
+          <a class="on_hover" href="kontakt.html">Kontakt</a>
+          <a class="on_hover" href="impressum.html">Impressum</a>
+      </div>
+      <div class="topnav">
+        <a href="index.html" class="active"><img class="head_logo" src="./assets/img/logo.png" alt="logo_burger"></a>
+        <div id="myLinks">
+          <a class="moblie_hover" href="index.html">Start</a>
+          <a class="moblie_hover" href="rezept_des_tages.html">Rezept des Tages</a>
+          <a class="moblie_hover" href="kontakt.html">Kontakt</a>
+          <a class="moblie_hover" href="impressum.html">Impressum</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div id="padding_5" class="titel_und_bild">
+            <div>
+              <h1>Vegetarische Tortellini Pfanne</h1>
+            </div>  
+            <div> 
+              <img class="hänchen" src="./assets/img/4300-org.jpg" alt="Titel_img" />
+            </div> 
+      </div>
+      <div id="padding_5" class="quick_info">
+        <div class="time">
+            <img class="clock_icon" src="./assets/icons/clock-regular.svg" alt="Clock">
+            <span class="span_quick_info">35 Min.</span>
+        </div>
+        <div class="difficulty">
+            <img class="brain_icon" src="./assets/icons/brain-solid.svg" alt="Brain">
+            <span class="span_quick_info">Simple</span>
+        </div>
+        <div class="date">
+            <img class="calendar_icon" src="./assets/icons/calendar-alt-regular.svg" alt="Calendar">
+            <span class="span_quick_info">17.10.2024</span>
+        </div>
+      </div>
+        
+      <div id="padding_5" class="rezept">
+        <label for="amountInput" class="lable_input_section">Zutaten für</label>
+        <input class="input_size" id="servings" min="1"  max="10" type="number" value="1">
+        <button onclick="updateIngredients()">Portionen</button>
+      </div>
+
+      <div id="padding_5" class="rezept_list">
+        <li id="ingredient1">200 g Tortellini</li>
+        <li id="ingredient2">50 g Bohnen, grün, halbiert</li>
+        <li id="ingredient3">100 g Brokkoliröschen</li>
+        <li id="ingredient4">0.5 Porreestange</li>
+        <li id="ingredient5">50 g Chamignons</li>
+        <li id="ingredient6">1 Knoblauchzehen, gehackt</li>
+        <li id="ingredient7">0.5 EL Gemüsebrühpulver</li>
+        <li id="ingredient8">75 ml Pflanzensahne</li>
+        <li id="ingredient9">3 Cocktailtomaten, halbiert</li>
+        <li>Parmesan, frisch gerieben</li>
+        <li>Speisestärke zum Andicken</li>
+        <li>Chillipulver</li>
+        <li>Salz und Pfeffer aus der Mühle</li>
+        <li>Butter</li>
+      </div>
+
+      <div id="padding_5" class="how_to_prepare">
+        <h2>Zubereitung</h2>
+        <div class="quick_info_2">
+        <div class="totaltime_sven">
+          <img class="clock_icon" src="./assets/icons/clock-regular.svg" alt="time_cooking">
+          <span class="span_cook_time">Arbeitszeit ca. 20 min.</span>
+        </div>
+        <div class="totaltime_sven">
+          <img class="clock_icon" src="./assets/icons/clock-regular.svg" alt="wait_cook_time">
+          <span class="span_cook_time">Backzeit ca. 15 min.</span>
+        </div>
+        <div class="totaltime_sven">
+          <img class="clock_icon" src="./assets/icons/clock-regular.svg" alt="all_time">
+          <span class="span_cook_time">Gesammte Zeit 35 min.</span>
+        </div>
+      </div>
+
+      <p class="step_by_step">
+        
+        Die Tortellini in Salzwasser al dente kochen, abgießen und beiseitestellen. Die Bohnen in Salzwasser ca. 8 Minuten kochen, dann die Brokkoliröschen für weitere 3 - 4 Minuten dazugeben. Das Gemüse abgießen, kalt abschrecken und beiseitestellen.
+        Butter in einer Pfanne erhitzen und Porree, Pilze und Knoblauch darin anschwitzen. Mit Salz, Pfeffer, Chili und etwas Gemüsebrühepulver würzen. Mit dem Sahneersatz ablöschen, die Tortellini dazugeben, die Bohnen und die Brokkoliröschen untermischen und alles heiß werden lassen. Bei Bedarf mit etwas Speisestärke andicken. Die halbierten Cherrytomaten unterheben.
+         Mit Salz und Pfeffer abschmecken und mit frisch geriebenem Parmesan bestreut servieren.
+      
+      </p>
+
+    </div>
+
+      <div id="padding_5" class="author">
+
+        <h2>Rezept erstellt von</h2>
+        <div class="profile">
+          <img class="profile_icon" src="./assets/img/profile.png" alt="profile">
+
+          <span class="author_name">Sven</span>
+        </div>
+      </div>
+    </div>
+
+ 
+    <div class="kontakt_footer">
+      <div class="footer-content">
+        <div class="footer_icon ">
+         <a href="./index.html"><img class="head_logo" src="./assets/img/logo-white.png" alt="Logo" /></a> 
+        </div>
+        <div class="footer_socials ">
+          <a href="https://www.facebook.com/?locale=de_DE">
+          <img src="./assets/img/facebook_logo.png" alt="">
+        </a>
+        <a href="https://x.com/">
+          <img src="./assets/img/X.png" alt="">
+        </a>
+        <a href="https://www.instagram.com/">
+          <img src="./assets/img/instagrram_logo.png" alt="">
+        </a>
+        </div>
+    </div>
+  </div>
+
+  </body>
+
+
+  <script src="script.js"></script>
+
+</html>

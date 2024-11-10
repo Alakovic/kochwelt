@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept des Tages</title>
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="kontakt.html">
+    <link rel="stylesheet" href="impressum.html">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/img/logo_small.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body id="recipe3">
+<header>
+    <div class="header-content"> 
+        <div class="logo_logo">
+            <a href="index.html">
+               <img class="head_logo" src="./assets/img/logo.png" alt="Logo" />
+            </a>
+          </div>
+    <div class="head_links">
+        <a class="on_hover" href="index.html">Start</a> 
+        <a class="on_hover" href="rezept_des_tages.html">Rezept des Tages</a>
+        <a class="on_hover" href="kontakt.html">Kontakt</a>
+        <a class="on_hover" href="impressum.html">Impressum</a>
+    </div>
+    <div class="topnav">
+        <a href="index.html" class="active"><img class="head_logo" src="./assets/img/logo.png" alt="logo_burger"></a>
+        <div id="myLinks">
+          <a class="moblie_hover" href="index.html">Start</a>
+          <a class="moblie_hover" href="rezept_des_tages.html">Rezept des Tages</a>
+          <a class="moblie_hover" href="kontakt.html">Kontakt</a>
+          <a class="moblie_hover" href="impressum.html">Impressum</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+            <div id="padding_5" class="titel_und_bild">
+                <div>
+                    <h1>Spaghetti Carbonara</h1>
+                </div>
+                    <div>
+                        <img class="hänchen" src="./assets/img/spaghetti-carbonara.jpg" alt="">
+                    </div>
+            </div>
+            <div id="padding_5" class="quick_info">
+                <div class="time">
+                    <img class="clock_icon" src="./assets/icons/clock-regular.svg" alt="clock_icon">
+                    <span>15 Min.</span>
+                </div>
+                <div class="difficulty">
+                    <img class="brain_icon" src="./assets/icons/brain-solid.svg" alt="">
+                    <span>Simple</span>
+                </div>
+                <div class="date">
+                    <img class="calendar_icon" src="./assets/icons/calendar-alt-regular.svg" alt="">
+                    <span>28.09.2020</span>
+                </div>
+            </div>
+
+            <div id="padding_5" class="rezept">
+                <label for="servings">Zutaten für</label>
+                <input id="servings" type="number" min="1"  max="10" value="1" >
+                <button onclick="updateIngredients()">Portionen</button>
+            </div>
+            <div id="padding_5" class="rezept_list">
+                <li id="ingredient1">120 g Pasta, lang und dünn</li>
+                <li id="ingredient2">50 g Pancetta, Guanciale oder roher italienischer Schinken</li>
+                <li id="ingredient3">1 Ei(er)</li>
+                <li id="ingredient4">20 g Parmesan oder Grana padano, frisch gerieben</li>
+                <li id="ingredient5">20 g Pecorino romano, frisch gerieben</li>
+                <li id="ingredient6">250 ml Sahne zum Kochen</li>
+                <li >Olivenöl</li>
+                <li >Salz und Pfeffer, schwarzer aus der Mühle</li>
+            </div>
+
+            <div id="padding_5" class="how_to_prepare">
+                <h2>Zubereitung</h2>
+                <div class="quick_info_2">
+                    <div class="clock15min">
+                        <img class="clock_icon" src="./assets/icons/clock-regular.svg" alt="Clock">
+                        <span >ca. 15 Minunuten</span>
+                    </div>
+                    <div class="totaltime">
+                        <img class="clock_icon" src="./assets/icons/clock-regular.svg" alt="Clock">
+                        <span>Gesamtzeit ca.15 Minunuten</span>
+                    </div>
+                </div>
+                <p class="step_by_step">Den Speck bzw. Schinken nicht zu fein würfeln. In Olivenöl glasig anschwitzen.
+                    Beiseitestellen. Die Pasta in reichlich Salzwasser al dente kochen - auf keinen Fall weich,
+                    da die Pasta später noch etwas nachkocht. Gegen Ende der Kochzeit etwas Kochwasser (1 - 2
+                    Espressotässchen) auffangen oder einfach abschöpfen.
+                    Währenddessen die Eier mit den beiden Käsesorten verquirlen. Leicht salzen, schwarzen
+                    Pfeffer nach Geschmack mahlen und zufügen.
+                    Den Speck bzw. Schinken erneut erhitzen. Aufgefangenes Kochwasser hinzufügen und aufkochen
+                    lassen. Die Pasta zufügen, verrühren. Eier-Käse-Mischung zufügen. Leicht stocken lassen und
+                    gut rühren, damit die Mischung die Pasta zärtlich umhüllt.
+                    Dazu passt am besten ein guter Frascati Superiore. So mögen's die Römer im Original.
+                </p>
+            </div>
+
+            <div id="padding_5" class="author">
+                <h2>Rezept erstellt von</h2>
+                <div class="profile">
+                    <img class="profile_icon" src="./assets/img/profile.png" alt="Profile Picture">
+                    <span class="author_name">Meric</span>
+                </div>
+            </div>
+            
+    </div>
+
+    <div class="kontakt_footer">
+        <div class="footer-content">
+          <div class="footer_icon ">
+           <a href="./index.html"><img class="head_logo" src="./assets/img/logo-white.png" alt="Logo" /></a> 
+          </div>
+          <div class="footer_socials ">
+            <a href="https://www.facebook.com/?locale=de_DE">
+            <img src="./assets/img/facebook_logo.png" alt="">
+          </a>
+          <a href="https://x.com/">
+            <img src="./assets/img/X.png" alt="">
+          </a>
+          <a href="https://www.instagram.com/">
+            <img src="./assets/img/instagrram_logo.png" alt="">
+          </a>
+          </div>
+      </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>

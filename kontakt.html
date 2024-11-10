@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak</title>
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="rezept_des_tages.html">
+    <link rel="stylesheet" href="impressum.html">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/img/logo_small.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-content"> 
+      <div class="logo_logo">
+        <a href="index.html">
+           <img class="head_logo" src="./assets/img/logo.png" alt="Logo" />
+        </a>
+      </div>
+      <div class="head_links">
+
+        <a class="on_hover" href="index.html">Start</a>
+
+        <a class="on_hover" href="rezept_des_tages.html">Rezept des Tages</a>
+
+        <a class="on_hover" href="kontakt.html">Kontakt</a>
+
+        <a class="on_hover" href="impressum.html">Impressum</a>
+
+        
+      </div>
+      <div class="topnav">
+        <a href="index.html" class="active"><img class="head_logo" src="./assets/img/logo.png" alt="logo_burger"></a>
+        <div id="myLinks">
+          <a class="moblie_hover" href="index.html">Start</a>
+          <a class="moblie_hover" href="rezept_des_tages.html">Rezept des Tages</a>
+          <a class="moblie_hover" href="kontakt.html">Kontakt</a>
+          <a class="moblie_hover" href="impressum.html">Impressum</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+     
+      
+   
+    </div>
+  </header>
+
+     
+  <div class="container">
+    
+    <div class="form_wrapper">
+      <form onsubmit="sendMail(event)">
+        <h3>Kontaktiere uns</h3>
+        <div class="form-group">
+        <label for="name">Dein Name:</label>
+        <input type="text" name="name" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="e-mail">Deine E-Mail:</label>
+        <input type="email" name="e-mail" id="e-mail" required>
+      </div> 
+      <div class="form-group">
+        <label for="nachricht">Deine Nachricht:</label>
+        <textarea id="nachricht" name="nachricht" required></textarea>
+      </div>   
+        <button type="submit">Abschicken</button>
+      
+      </form>
+    </div>
+  </div>
+
+  
+    <div class="kontakt_footer">
+      <div class="footer-content">
+        <div class="footer_icon ">
+         <a href="./index.html"><img class="head_logo" src="./assets/img/logo-white.png" alt="Logo" /></a> 
+        </div>
+        <div class="footer_socials ">
+          <a href="https://www.facebook.com/?locale=de_DE">
+          <img src="./assets/img/facebook_logo.png" alt="">
+        </a>
+        <a href="https://x.com/">
+          <img src="./assets/img/X.png" alt="">
+        </a>
+        <a href="https://www.instagram.com/">
+          <img src="./assets/img/instagrram_logo.png" alt="">
+        </a>
+        </div>
+    </div>
+  </div>
+  
+  
+  </body>
+  <script src="script.js"></script>
+</html>

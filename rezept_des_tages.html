@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept des Tages</title>
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="kontakt.html">
+    <link rel="stylesheet" href="impressum.html">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/img/logo_small.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body id="recipe1">
+    <header>
+        <div class="header-content"> 
+            <div class="logo_logo">
+                <a href="index.html">
+                   <img class="head_logo" src="./assets/img/logo.png" alt="Logo" />
+                </a>
+              </div>
+        <div class="head_links">
+            <a class="on_hover" href="index.html">Start</a> 
+            <a class="on_hover" href="rezept_des_tages.html">Rezept des Tages</a>
+            <a class="on_hover" href="kontakt.html">Kontakt</a>
+            <a class="on_hover" href="impressum.html">Impressum</a>
+        </div>
+        <div class="topnav">
+            <a href="index.html" class="active"><img class="head_logo" src="./assets/img/logo.png" alt="logo_burger"></a>
+            <div id="myLinks">
+              <a class="moblie_hover" href="index.html">Start</a>
+              <a class="moblie_hover" href="rezept_des_tages.html">Rezept des Tages</a>
+              <a class="moblie_hover" href="kontakt.html">Kontakt</a>
+              <a class="moblie_hover" href="impressum.html">Impressum</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      
+      <div class="container">
+    <div id="padding_5" class="titel_und_bild">
+        <div>
+            <h1>Hänchen-Paprika-Pfanne mit Tomaten und Sahne-Sauce</h1>
+        </div>
+        <div>
+            <img class="hänchen"  src="./assets/img/hänchen.png" alt="Hänchen-Paprika-Pfanne">
+        </div>
+    </div>
+    <div id="padding_5" class="quick_info">
+        <div class="time">
+            <img class="clock_icon" src="./assets/icons/clock-regular.svg" alt="Clock">
+            <span >20 Min.</span>
+        </div>
+        <div class="difficulty">
+            <img class="brain_icon" src="./assets/icons/brain-solid.svg" alt="Brain">
+            <span>Simple</span>
+        </div>
+        <div class="date">
+            <img class="calendar_icon" src="./assets/icons/calendar-alt-regular.svg" alt="Calendar">
+            <span>20.10.2024</span>
+        </div>
+    </div>
+    <div id="padding_5" class="rezept">
+        <label for="servings">Zutaten für</label>
+        <input id="servings" type="number" min="1" max="10" value="1" >
+        <button onclick="updateIngredients()">Portionen</button>
+    </div>
+    <div id="padding_5" class="rezept_list">
+        <li id="ingredient1">400 g Hänchenbrustfilet</li>
+        <li id="ingredient2">1 rote Paprikaschote</li>
+        <li id="ingredient3">2 Tomaten</li>
+        <li id="ingredient4">1 Knoblauchzehe</li>
+        <li id="ingredient5">1 EL Olivenöl</li>
+        <li id="ingredient6">250 ml Sahne zum Kochen</li>
+        <li id="ingredient7">2 EL Tomatenmark</li>
+        <li id="ingredient8">1 TL Gemüsebrühe</li>
+        <li id="ingredient9">2 EL gehacktes Basilikum</li>
+        <li>Salz</li>
+        <li>Pfeffer</li>
+    </div>
+    <div id="padding_5" class="how_to_prepare">
+        <h2>Zubereitung</h2>
+        <div class="quick_info_2">
+            <div class="clock15min">
+                <img class="clock_icon" src="./assets/icons/clock-regular.svg" alt="Clock">
+                <span >ca. 20 Minunuten</span>
+            </div>
+            <div class="totaltime">
+                <img class="clock_icon" src="./assets/icons/clock-regular.svg" alt="Clock">
+                <span>Gesamtzeit ca.20 Minunuten</span>
+            </div>
+        </div>
+        <p class="step_by_step">Hähnchen, Paprika und Tomaten in kleine Stücke schneiden. Knoblauch hacken.
+           Olivenöl in einer Pfanne erhitzen und das Hähnchen kräftig anbraten. Mit Salz und Pfeffer würzen. 
+           Paprika und Knoblauch zugeben und kurz mitbraten.Sahne, Tomatenmark und Gemüsebrühe in eine Schüssel geben und verrühren. 
+           Die Soße zusammen mit Basilikum und Tomaten in die Pfanne geben und einmal aufkochen. Mit Salz und Pfeffer abschmecken.
+        </p>
+    </div>
+    <div id="padding_5" class="author">
+        <h2>Rezept erstellt von</h2>
+        <div class="profile">
+            <img class="profile_icon" src="./assets/img/profile.png" alt="Profile Picture">
+            <span class="author_name">Zeljko</span>
+        </div>
+    </div>
+</div>
+<div class="kontakt_footer">
+    <div class="footer-content">
+      <div class="footer_icon ">
+       <a href="./index.html"><img class="head_logo" src="./assets/img/logo-white.png" alt="Logo" /></a> 
+      </div>
+      <div class="footer_socials ">
+        <a href="https://www.facebook.com/?locale=de_DE">
+        <img src="./assets/img/facebook_logo.png" alt="">
+      </a>
+      <a href="https://x.com/">
+        <img src="./assets/img/X.png" alt="">
+      </a>
+      <a href="https://www.instagram.com/">
+        <img src="./assets/img/instagrram_logo.png" alt="">
+      </a>
+      </div>
+  </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
